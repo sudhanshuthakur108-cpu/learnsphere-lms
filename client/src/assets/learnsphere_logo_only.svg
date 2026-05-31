@@ -1,0 +1,29 @@
+<svg width="100%" viewBox="0 0 680 160" role="img" xmlns="http://www.w3.org/2000/svg" style="">
+  <title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">LearnSphere Logo</title>
+  <desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">LearnSphere brand logo with planet icon mark</desc>
+  <defs>
+    
+  </defs>
+
+  <!-- Centered logo group: icon + wordmark -->
+  <!-- Icon mark -->
+  <!-- Outer orbit -->
+  <circle cx="280" cy="80" r="30" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-dasharray="6 4" opacity="0.4" style="fill:none;stroke:rgb(37, 99, 235);color:rgb(255, 255, 255);stroke-width:1.8px;stroke-dasharray:6px, 4px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.4;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Planet -->
+  <circle cx="280" cy="80" r="20" fill="#2563EB" style="fill:rgb(37, 99, 235);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Highlight -->
+  <ellipse cx="274" cy="73" rx="5.5" ry="4" fill="white" opacity="0.28" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.28;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Latitude lines -->
+  <ellipse cx="280" cy="80" rx="20" ry="7" fill="none" stroke="white" stroke-width="1" opacity="0.3" style="fill:none;stroke:rgb(255, 255, 255);color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.3;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <ellipse cx="280" cy="80" rx="20" ry="13" fill="none" stroke="white" stroke-width="0.6" opacity="0.18" style="fill:none;stroke:rgb(255, 255, 255);color:rgb(255, 255, 255);stroke-width:0.6px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.18;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Satellite dot -->
+  <circle cx="310" cy="80" r="5.5" fill="#60a5fa" style="fill:rgb(96, 165, 250);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Wordmark -->
+  <text x="325" y="88" font-family="Outfit,sans-serif" font-weight="700" font-size="36" fill="#111827" letter-spacing="-0.5" style="fill:rgb(17, 24, 39);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Outfit, sans-serif;font-size:36px;font-weight:700;text-anchor:start;dominant-baseline:auto">Learn</text>
+  <text x="437" y="88" font-family="Outfit,sans-serif" font-weight="700" font-size="36" fill="#2563EB" letter-spacing="-0.5" style="fill:rgb(37, 99, 235);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Outfit, sans-serif;font-size:36px;font-weight:700;text-anchor:start;dominant-baseline:auto">Sphere</text>
+
+  <!-- Tagline -->
+  <text x="340" y="112" font-family="Outfit,sans-serif" font-size="11" fill="#9ca3af" letter-spacing="0.12em" text-anchor="middle" style="fill:rgb(156, 163, 175);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Outfit, sans-serif;font-size:11px;font-weight:400;text-anchor:middle;dominant-baseline:auto">EXPAND YOUR UNIVERSE</text>
+
+</svg>
