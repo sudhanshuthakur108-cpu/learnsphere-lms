@@ -34,7 +34,9 @@ const Earnings = () => {
 
   const totalEarnings = allCourses.reduce(
     (total, course) =>
-      total + Number(course.coursePrice || 0),
+      total +
+      Number(course.coursePrice || 0) *
+        (course.enrolledStudents?.length || 0),
     0
   );
 
@@ -51,14 +53,18 @@ const Earnings = () => {
 
   const pieData = allCourses.map((course) => ({
     name: course.courseTitle,
-    value: Number(course.coursePrice),
+    value:
+      Number(course.coursePrice || 0) *
+      (course.enrolledStudents?.length || 0),
   }));
 
   // BAR CHART DATA
 
   const barData = allCourses.map((course) => ({
     name: course.courseTitle.slice(0, 12),
-    earnings: Number(course.coursePrice),
+    earnings:
+      Number(course.coursePrice || 0) *
+      (course.enrolledStudents?.length || 0),
   }));
 
   return (

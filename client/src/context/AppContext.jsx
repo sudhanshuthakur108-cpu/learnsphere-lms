@@ -10,11 +10,12 @@ export const AppContextProvider = (props) => {
 
   const navigate = useNavigate();
 
-  // LOCAL STORAGE COURSES 😎
+  // LOCAL STORAGE COURSES
 
   const [allCourses, setAllCourses] = useState(() => {
 
-    const savedCourses = localStorage.getItem("courses");
+    const savedCourses =
+      localStorage.getItem("courses");
 
     return savedCourses
       ? JSON.parse(savedCourses)
@@ -37,7 +38,7 @@ export const AppContextProvider = (props) => {
 
   const [isEducator, setIsEducator] = useState(true);
 
-  // SAVE COURSES TO LOCAL STORAGE
+  // SAVE COURSES
 
   useEffect(() => {
 
@@ -48,7 +49,7 @@ export const AppContextProvider = (props) => {
 
   }, [allCourses]);
 
-  // SAVE ENROLLMENTS TO LOCAL STORAGE
+  // SAVE ENROLLMENTS
 
   useEffect(() => {
 
@@ -92,10 +93,39 @@ export const AppContextProvider = (props) => {
 
     if (alreadyEnrolled) return;
 
-    setEnrolledCourses((prev) => [
-      ...prev,
+    // UPDATE ENROLLED COURSES
+
+    const updatedEnrollments = [
+      ...enrolledCourses,
       course,
-    ]);
+    ];
+
+    setEnrolledCourses(updatedEnrollments);
+
+    // UPDATE COURSE STUDENTS
+
+    const updatedCourses = allCourses.map((item) => {
+
+      if (item._id === course._id) {
+
+        return {
+
+          ...item,
+
+          enrolledStudents: [
+            ...(item.enrolledStudents || []),
+            `user_${Date.now()}`
+          ]
+
+        };
+
+      }
+
+      return item;
+
+    });
+
+    setAllCourses(updatedCourses);
 
   };
 

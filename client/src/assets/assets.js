@@ -126,115 +126,9 @@ export const dummyTestimonial = [
     },
 ];
 
-export const dummyDashboardData = {
-    "totalEarnings": 707.38,
-    enrolledStudentsData: [
 
-  {
-    student: {
-      name: "Sudhanshu Thakur",
-      imageUrl: "https://i.pravatar.cc/100?img=1",
-    },
-    courseTitle: "Introduction to JavaScript",
-    purchaseDate: "24 May, 2026",
-  },
 
-  {
-    student: {
-      name: "Akash Sharma",
-      imageUrl: "https://i.pravatar.cc/100?img=2",
-    },
-    courseTitle: "Advanced Python Programming",
-    purchaseDate: "26 May, 2026",
-  },
 
-  {
-    student: {
-      name: "Sumit Verma",
-      imageUrl: "https://i.pravatar.cc/100?img=3",
-    },
-    courseTitle: "Web Development Bootcamp",
-    purchaseDate: "27 May, 2026",
-  },
-
-  {
-    student: {
-      name: "Sakshi Gupta",
-      imageUrl: "https://i.pravatar.cc/100?img=4",
-    },
-    courseTitle: "Data Science with Python",
-    purchaseDate: "28 May, 2026",
-  },
-
-  {
-    student: {
-      name: "Ayush Raj",
-      imageUrl: "https://i.pravatar.cc/100?img=5",
-    },
-    courseTitle: "Cybersecurity Basics",
-    purchaseDate: "29 May, 2026",
-  },
-
-  {
-    student: {
-      name: "Kartik Singh",
-      imageUrl: "https://i.pravatar.cc/100?img=6",
-    },
-    courseTitle: "React Complete Course",
-    purchaseDate: "30 May, 2026",
-  },
-
-  {
-    student: {
-      name: "Saloni Mishra",
-      imageUrl: "https://i.pravatar.cc/100?img=7",
-    },
-    courseTitle: "MERN Stack Masterclass",
-    purchaseDate: "31 May, 2026",
-  },
-
-],
-    "totalCourses": 8
-}
-
-export const dummyStudentEnrolled = [
-    {
-        "student": {
-            "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "name": "GreatStack",
-            "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
-        },
-        "courseTitle": "Introduction to JavaScript",
-        "purchaseDate": "2024-12-20T08:39:55.509Z"
-    },
-    {
-        "student": {
-            "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "name": "GreatStack",
-            "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
-        },
-        "courseTitle": "Introduction to JavaScript",
-        "purchaseDate": "2024-12-20T08:59:49.964Z"
-    },
-    {
-        "student": {
-            "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "name": "GreatStack",
-            "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
-        },
-        "courseTitle": "Advanced Python Programming",
-        "purchaseDate": "2024-12-20T11:03:42.931Z"
-    },
-    {
-        "student": {
-            "_id": "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
-            "name": "GreatStack",
-            "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ"
-        },
-        "courseTitle": "Web Development Bootcamp",
-        "purchaseDate": "2024-12-20T11:04:48.798Z"
-    }
-]
 
 export const dummyCourses = [
     {
@@ -294,7 +188,7 @@ export const dummyCourses = [
         ],
         "educatorName": "Akash Sharma",
         "enrolledStudents": [
-            "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
+           "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
             "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],

@@ -1,34 +1,35 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../context/AppContext";
 import { useNavigate } from "react-router-dom";
-import {
-  assets,
-  dummyDashboardData
-} from "../../assets/assets";
+import { assets } from "../../assets/assets";
 
 const Dashboard = () => {
 
   const navigate = useNavigate();
 
- 
+  const { allCourses } = useContext(AppContext);
+
+  // TOTAL COURSES
+
+  const totalCourses = allCourses?.length || 0;
+
   // TOTAL ENROLLMENTS
-const { allCourses } =
-  useContext(AppContext);
 
-const totalCourses =
-  allCourses.length;
+  const totalEnrollments = allCourses.reduce(
+    (total, course) =>
+      total + (course.enrolledStudents?.length || 0),
+    0
+  );
 
-const totalEnrollments =
-  dummyDashboardData.enrolledStudentsData.length;
-  
   // TOTAL EARNINGS
 
-  const totalEarnings =
-    allCourses.reduce(
-      (total, course) =>
-        total + Number(course.coursePrice || 0),
-      0
-    );
+  const totalEarnings = allCourses.reduce(
+    (total, course) =>
+      total +
+      Number(course.coursePrice || 0) *
+        (course.enrolledStudents?.length || 0),
+    0
+  );
 
   // DASHBOARD CARDS
 
@@ -84,11 +85,7 @@ const totalEnrollments =
 
           <div
             key={index}
-
-            onClick={() =>
-              item.path && navigate(item.path)
-            }
-
+            onClick={() => item.path && navigate(item.path)}
             className="bg-white rounded-3xl border border-gray-200 p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer"
           >
 
@@ -101,9 +98,7 @@ const totalEnrollments =
                 </p>
 
                 <h2 className="text-4xl font-bold text-gray-800 mt-2">
-
                   {item.value}
-
                 </h2>
 
               </div>
@@ -133,20 +128,14 @@ const totalEnrollments =
         <div className="px-6 py-5 border-b border-gray-200 flex items-center justify-between">
 
           <h2 className="text-xl font-semibold text-gray-800">
-
             Recent Courses
-
           </h2>
 
           <button
-            onClick={() =>
-              navigate("/course-list")
-            }
+            onClick={() => navigate("/course-list")}
             className="text-blue-600 hover:text-blue-700 font-medium"
           >
-
             View All
-
           </button>
 
         </div>
@@ -201,9 +190,7 @@ const totalEnrollments =
                       />
 
                       <p className="font-medium text-gray-800">
-
                         {course.courseTitle}
-
                       </p>
 
                     </div>
@@ -214,20 +201,16 @@ const totalEnrollments =
 
                   <td className="px-6 py-4 text-gray-600">
 
-                    {
-                      course.educatorName ||
+                    {course.educatorName ||
                       course.educator?.name ||
-                      course.educator
-                    }
+                      course.educator}
 
                   </td>
 
                   {/* PRICE */}
 
                   <td className="px-6 py-4 text-gray-700 font-medium">
-
                     ${course.coursePrice}
-
                   </td>
 
                   {/* LEVEL */}
