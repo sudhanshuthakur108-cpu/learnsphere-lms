@@ -3,7 +3,7 @@
 LearnSphere is a modern and responsive Learning Management System (LMS) built using React.js and Tailwind CSS.  
 The platform provides separate dashboards for students and educators, allowing course management, enrollments, and interactive learning experiences through a clean and user-friendly interface.
 
-🔗 Live Demo: https://learnsphereeee.netlify.app/
+🔗 Live Demo: https://learnspheere.netlify.app/
 
 ---
 
